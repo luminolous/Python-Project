@@ -7,14 +7,14 @@ if format == 'MP3':
     # MP3 Download
     ydlOpts = {
         'format': 'bestaudio/best',
-        'outtmpl': r'C:\Users\Syauqi Nabil\Music\audio.%(ext)s'
+        'outtmpl': r'C:\audio.%(ext)s'
     ,
     }
 elif format == 'MP4':
     # MP4 Download
     ydlOpts = {
         'format': 'best',  
-        'outtmpl': r'C:\Users\Syauqi Nabil\video.%(ext)s',  
+        'outtmpl': r'C:\video.%(ext)s',  
     }
 
 with yt_dlp.YoutubeDL(ydlOpts) as ydl:
